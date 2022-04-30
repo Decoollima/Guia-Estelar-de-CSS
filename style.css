@@ -1,0 +1,157 @@
+/* ihuuu, aprendi a fzr comentários aqui kkkkkkk*/
+/*
+  Anatomia do CSS (Cascading Style Sheet)
+
+  - Selector (A tag HTML que será estilizada)
+  - Declaration (Tudo dentro das {} )
+  - Properties (Propriedades que vamos estilizar, exp: Color, Font-size, background)
+  - Property Value (O valor atribuido a essa propriedade)
+
+  h1 {
+    color: white
+    font-size: 60px
+    background: black
+  }
+
+  Para agrupar elementos fazemos:
+
+  h1, h2, p {
+    color: blue
+  }
+*/
+/*
+  Selectors
+  
+  Contecta um elemento HTML com o CSS
+
+  Tipos
+
+  - Global selectors (*)
+  - Element/Type selectors (h1, p, div)
+  - id selectors (#box, #container)
+  - class selectors (.red, .m-4)
+  - Attribute selector, Pseudo-class, Pseudo-element, e outros
+*/
+/*
+  Propriedades
+
+    color: (muda a cor do selector)
+    background-color: (muda a cor da parte de trás do texto)
+    font-size: (muda o tamanho da fonte do texto)
+    width: (muda a lagura do selector)
+    margin: (muda o tamanho da margem do selector)
+    padding: (muda o tamanho do padding do selector)
+
+*/
+/*
+  Box Model = o layout de uma pagina é organizada em caixas
+  - quase tudo são caixas do CSS
+  - você pode personalizar muitas coisa com CSS, como posicionamentos, tamanhos, espaçamentos, bordas, cores
+  - As caixas podem ficar em qualquer lado de outra caixa
+  - Os elementos HTML são caixas
+*/
+/*
+  Adicionando CSS no documento
+
+  Inline = Atribui motificações dentro do próprio doc HTML
+    <h1 style="color: red">
+
+  <style> = Abrir a tag style dentro da <head> e modificar os textos por lá
+    <head>
+      <style>
+        h1{
+          color:red
+        }
+      </style>
+    </head>
+
+  <link> = linkar o arquivo CSS externo
+    <link rel="stylesheet" href="style.css">
+
+  @import = importar arquivos externos para dentro do CSS
+    @import "url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap')";
+
+  h1{
+    font-family: 'Montserrat', sans-serif;
+  }
+
+*/
+/*
+  A cascata (Cascading)
+
+  A escolha do browser sobre qual regra aplicar, caso haja muitas regras para um mesmo elemento.
+  - Seu estilo é lido de cima para baixo
+  - É levado em consideração 3 fatores: 
+    * Origem do Estilo
+    * Especificidade
+    * Importância
+
+  Origem do Estilo
+
+  inline> Tag style > link
+
+  Especificidade
+
+  0. Universal selectors
+  1. Element type selector
+  10. Classes e atributte selectors
+  100. id selector
+  1000. inline
+
+  Importância !important
+
+  cuidado, evite o uso
+  Não é considerado uma boa prática
+  quebra o fluxo natural da cascata
+*/
+/*
+  At-rules (Regras do @)
+
+  Está relacionado ao comportamento do CSS
+  começa com o sinal de '@' seguido do identificador e do valor
+
+  Exemplos
+
+  - @import (Incluir um CSS externo)
+  - @media (Regras condicionais para dispositivos)
+  - @font-face (Fonts externas)
+  - @keyframes (Animation)
+*/
+/*
+  Shorthand
+
+  É possivel escrever seu código de duas maneiras
+
+  Especificando: 
+
+  h1{
+    background-color: red;
+    background-repeat: no-repeat;
+    background-image: url(images/background)
+  }
+
+  Shorthand: 
+
+  h1{
+    background: red no-repeat url(images/background);
+  }
+
+*/
+/*
+  Funções
+
+  - Nome seguido de abre e fecha parentesis
+  - Recebe argumentos
+
+  --> @import url(https://www.google.com.br)
+  --> color: rgb(145,67,89)
+
+*/
+
+h1{
+  background-color: rgb(167, 17, 167);
+  color: rgb(228, 217, 217);
+  border: 1px solid rgb(126, 7, 120);
+  margin: 100px;
+  padding:50px;
+}
