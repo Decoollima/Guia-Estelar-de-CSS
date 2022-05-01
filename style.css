@@ -147,7 +147,89 @@
   --> color: rgb(145,67,89)
 
 */
+/*
+  Onde aprofundar e seus conhecimentos
 
+  MDN web docs
+  https://developer.mozilla.org/pt-BR/
+
+*/
+/*
+  Unidades de medida
+
+  Tipos numéricos
+
+    - <integer> = número inteiro como -10 ou 234
+    - <number> = número decimal como -0.2, 64, 0.456
+    - <dimension> = é um <number> junto de uma unidade: 90deg, 2s, 8px
+    - <percentagem> = representa a fração de um outro número: 50%
+
+  Unidades comuns
+
+    - <lenght> = representa um valor de distância como px, em, vw
+    - <angle> = representa um ângulo: deg, rad, turn
+    - <time> = representa um tempo: s, ms
+    - <resolution> = representa resoluções para dispositivos: dpi
+
+*/
+/*
+  Distâncias absolutas <lenght>
+
+  São fixas e não alteram o seu valor.
+
+  Unidade   Nome                  Equivalência
+  cm        Centímetros           1cm = 96px = 2.54in
+  in        Inches (polegadas)    1in = 2.54cm = 96px
+  px        Pixels                1px = 1/96th of 1in
+
+  O mais comum é utilizar px
+
+  Distâncias relativas
+
+  São relativas a algum outro valor, fpode ser o elemento pai, root, ou o tamanho da tela.
+
+  Benefício: Maior adaptação aos diferentes tipos de tela
+
+  Unidade       Relativo a
+  em            Tamanho da font pai
+  rem           Tamanho da font do elemento raiz (root/html)
+  vw            1% da viewport widht
+  vh            1% da viewport height
+
+  Porcentagens %
+
+    - Muitas vezes é tratado da mesma maneira que as distâncias <lenght>
+    - Sempre será relativo a algum valor
+  
+  <Position>
+
+  Representa um conjunto de coordenadas 2D
+  - top, right, bottom, left ou center
+
+  É diferente da propriedade position: 
+*/
+/*
+  Funções
+
+  Em programação, funções são reconhecidas por causar um reaproveitamento de código.
+
+  - rgb()
+  - hsl()
+  - url()
+  - calc()
+
+  Strings
+
+  Texto envolto em aspas
+  .box{
+    content: "Aqui vem alguma mensagem"
+  }
+
+  Identificadores
+
+  Um exemplo de identificadores são as cores: Red, black, gold.
+  
+*/
 h1{
   background-color: rgb(167, 17, 167);
   color: rgb(228, 217, 217);
