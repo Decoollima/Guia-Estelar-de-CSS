@@ -230,6 +230,32 @@
   Um exemplo de identificadores são as cores: Red, black, gold.
   
 */
+/*
+  Box Model
+
+  - Fundamental para fazer layouts na web
+  - Maior facilidade para aplicar o CSS
+
+  O que é?
+
+  - Tamanho (largura x altura)    widht | height
+  - Conteúdo                      content
+  - Bordas                        border
+  - Preenchimento interno         padding
+  - Espaços fora da caixa         margin
+
+  Box sizing
+
+  content-box = padrão do css, suas medidas respeitam o tamanho do contéudo dentro de cada caixa 
+  border-box = suas medidas respeitam o tamanho da caixa e ajusta o conteúdo de acordo
+
+*/
+/*
+  Display: inline vs Display: block
+
+  block = preenche toda a linha e empurra o proxima caixa para baixo
+  inline = uma caixa ao lado da outra
+*/
 h1{
   background-color: rgb(167, 17, 167);
   color: rgb(228, 217, 217);
